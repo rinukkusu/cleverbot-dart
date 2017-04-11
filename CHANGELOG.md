@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.0.8
-- added a few hints
+- added a few hints for cleverbot.com
 
 ## 0.0.4 - 0.0.7
 - fixed UTF8 errors
