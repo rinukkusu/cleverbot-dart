@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.6
+- move back to simple body
+
 ## 0.0.5
 - fixed all unicode possibilities
 
