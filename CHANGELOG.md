@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.4
+- fixed UTF8 errors
+- refactored code
+
 ## 0.0.3
 - fixed example in readme :)
 

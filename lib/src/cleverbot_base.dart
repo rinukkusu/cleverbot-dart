@@ -11,5 +11,16 @@ abstract class CleverbotBase {
 
   CleverbotBase(this._apiToken);
 
-  Future<String> think(String message);
+  Future<String> think(String message) async {
+    var bytes = await _thinkImpl(message);
+
+    var json = new String.fromCharCodes(bytes);
+    var decoded = JSON.decode(json) as Map<String, dynamic>;
+
+    _conversationCtx = decoded["cs"] as String;
+
+    return decoded["clever_output"] as String;
+  }
+
+  Future<Uint8List> _thinkImpl(String message);
 }

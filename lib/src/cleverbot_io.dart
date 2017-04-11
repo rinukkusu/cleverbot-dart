@@ -5,15 +5,10 @@ part of cleverbot;
 class Cleverbot extends CleverbotBase {
   Cleverbot(String apiToken) : super(apiToken);
 
-  Future<String> think(String message) async {
+  Future<Uint8List> _thinkImpl(String message) async {
     var client = new http.Client();
     var response = await client.get(_getUrl(message));
     var bytes = response.bodyBytes;
-    var json = UTF8.decode(bytes);
-    var decoded = JSON.decode(json);
-
-    _conversationCtx = decoded["cs"] as String;
-
-    return decoded["clever_output"] as String;
+    return bytes;
   }
 }
