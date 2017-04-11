@@ -1,19 +1,23 @@
-# cleverbot_dart
+# cleverbot
 
-A library for Dart developers. It is awesome.
+A library for interacting with cleverbot.
 
 ## Usage
 
 A simple usage example:
 
-    import 'package:cleverbot_dart/cleverbot_dart.dart';
+```dart
+import 'package:cleverbot/cleverbot.dart';
 
-    main() {
-      var awesome = new Awesome();
-    }
+main() async {
+  var cleverbot = new Cleverbot("0123456789ABCDEF");
+  var result = await cleverbot.think('Hello Cleverbot!');
+  print(result);
+}
+```
 
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/rinukkusu/cleverbot-dart/issues
