@@ -5,7 +5,7 @@ part of cleverbot;
 abstract class CleverbotBase {
   static const String _baseUrl = 'https://www.cleverbot.com/getreply';
   String _getUrl(String message) =>
-      '${_baseUrl}?key=${_apiToken}&cs=${_conversationCtx}&input={$message}';
+      '${_baseUrl}?key=${_apiToken}&cs=${_conversationCtx}&input=${Uri.encodeQueryComponent(message)}';
   final String _apiToken;
   String _conversationCtx = "";
 
