@@ -4,7 +4,7 @@
 import 'package:cleverbot/cleverbot.dart';
 
 main() async {
-  var cleverbot = new Cleverbot("0123456789ABCDEF");
+  var cleverbot = new Cleverbot("<YOUR APIKEY HERE>");
   var result = await cleverbot.think('Hello Cleverbot!');
   print(result);
 }
