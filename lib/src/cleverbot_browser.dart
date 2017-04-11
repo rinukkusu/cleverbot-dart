@@ -5,9 +5,9 @@ part of cleverbot;
 class Cleverbot extends CleverbotBase {
   Cleverbot(String apiToken) : super(apiToken);
 
-  Future<String> _thinkImpl(String message) async {
+  Future<List<int>> _thinkImpl(String message) async {
     var client = new http.BrowserClient();
     var response = await client.get(_getUrl(message));
-    return response.body;
+    return response.bodyBytes;
   }
 }
