@@ -1,0 +1,11 @@
+name: cleverbot
+description: A library for interacting with cleverbot.
+version: 0.0.2
+author: rinukkusu <rinukkusu@auen.land>
+homepage: https://github.com/rinukkusu/cleverbot-dart
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  http: '>=0.11.3+9 <0.12.0'
