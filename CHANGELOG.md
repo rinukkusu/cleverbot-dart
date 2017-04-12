@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.0
+- fixed exceptions on wrongly encoded interaction history
+
 ## 0.0.8 - 0.0.9
 - added a few hints for cleverbot.com
 - added wrapper parameter

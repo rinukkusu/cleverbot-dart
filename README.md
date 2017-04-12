@@ -1,6 +1,6 @@
 # cleverbot
 
-A library for interacting with cleverbot.
+A wrapper for interacting with the Cleverbot API.
 
 ## Usage
 

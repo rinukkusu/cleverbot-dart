@@ -3,7 +3,7 @@
 part of cleverbot;
 
 class Cleverbot extends CleverbotBase {
-  Cleverbot(String apiToken) : super(apiToken);
+  Cleverbot(String apiToken, {bool debug = false}) : super(apiToken, debug);
 
   Future<List<int>> _thinkImpl(String message) async {
     var client = new http.BrowserClient();
