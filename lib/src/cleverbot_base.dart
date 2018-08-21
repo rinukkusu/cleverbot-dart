@@ -19,7 +19,7 @@ abstract class CleverbotBase {
   Future<String> think(String message) async {
     var bytes = await _thinkImpl(message);
 
-    var decoded = UTF8.decode(bytes, allowMalformed: true);
+    var decoded = utf8.decode(bytes, allowMalformed: true);
     try {
       _conversationCtx = _csRegex.firstMatch(decoded).group(1);
       return _outputRegex.firstMatch(decoded).group(1);
