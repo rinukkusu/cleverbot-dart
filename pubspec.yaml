@@ -1,6 +1,6 @@
 name: cleverbot
-description: A wrapper for interacting with the Cleverbot API.
-version: 0.2.0
+description: A wrapper for interacting with the Cleverbot API. Get your API key at http://www.cleverbot.com/api
+version: 0.2.1
 author: rinukkusu <rinukkusu@auen.land>
 homepage: https://github.com/rinukkusu/cleverbot-dart
 
