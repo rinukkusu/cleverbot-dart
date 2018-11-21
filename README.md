@@ -1,4 +1,4 @@
-# cleverbot
+# cleverbot [![Pub](https://img.shields.io/pub/v/cleverbot.svg)](https://pub.dartlang.org/packages/cleverbot)
 
 A wrapper for interacting with the Cleverbot API.
 
